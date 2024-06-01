@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="icon" href="img.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<script src="calculos.js"></script>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="IMC.html">Sobre el IMC</a></li>
+                <li><a href="dieta.html">Dietas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>¿Qué es el IMC?</h2>
+            <p>El Índice de Masa Corporal (IMC) es una medida que se utiliza para determinar si una persona tiene un peso saludable para su altura.</p>
+        </section>
+        <section id="calculadora">
+            <h2>Calcula tu IMC</h2>
+            <form id="imcForm" onsubmit="return false;">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" name="altura" required>
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Contacto: info@calculadoradeimc.com</p>
+        <p>Síguenos en:</p>
+        <ul><br>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul><br>
+        <p>&copy; 2024 Calculadora de IMC</p>
+    </footer>
+</body>
+</html>
